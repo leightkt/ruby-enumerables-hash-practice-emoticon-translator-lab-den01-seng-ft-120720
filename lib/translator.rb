@@ -34,4 +34,4 @@ def get_english_meaning(file_path, emoticon)
 end
 
 # get_english_meaning('lib/emoticons.yml', "☜(⌒▽⌒)☞")
-load_library(./emoticons.yaml)
+load_library(lib/emoticons.yaml)
