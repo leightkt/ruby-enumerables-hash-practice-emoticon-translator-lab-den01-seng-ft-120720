@@ -21,16 +21,6 @@ def get_japanese_emoticon(file_path, emoticon)
   return "Sorry, that emoticon was not found"
 end
 
-def get_japanese_emoticon(file_path, emoticon)
-  # code goes here
-  emoticons = load_library(file_path)
-  emoticons.each{|key, value|
-    emoticons[key][:english]  emoticon
-      return emoticons[key][:japanese]
-    end
-  }
-  return "Sorry, that emoticon was not found"
-end
 
 def get_english_meaning(file_path, emoticon)
   # code goes here
@@ -44,3 +34,4 @@ def get_english_meaning(file_path, emoticon)
 end
 
 # get_english_meaning('lib/emoticons.yml', "☜(⌒▽⌒)☞")
+load_library(./emoticons.yaml)
