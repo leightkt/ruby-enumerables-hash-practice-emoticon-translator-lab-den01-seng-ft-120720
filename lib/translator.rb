@@ -18,7 +18,6 @@ end
 #     end
 #   }
 #   return "Sorry, that emoticon was not found"
-#       emoticons[key][:japanese]
 # end
 
 def get_japanese_emoticon(file_path, emoticon)
@@ -30,7 +29,6 @@ def get_japanese_emoticon(file_path, emoticon)
     end
   }
   return "Sorry, that emoticon was not found"
-      emoticons[key][:japanese]
 end
 
 def get_english_meaning(file_path, emoticon)
