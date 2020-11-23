@@ -12,11 +12,11 @@ end
 def get_japanese_emoticon(file_path, emoticon)
   # code goes here
   emoticons = load_library(file_path)
-  emoticons.each do |key, value|
+  emoticons.each{|key, value|
     if emoticons[key][:english] == emoticon
-      return emoticons[key][:japanese]
+      emoticons[key][:japanese]
     end
-  end
+  }
   return "Sorry, that emoticon was not found"
       emoticons[key][:japanese]
 end
