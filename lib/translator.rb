@@ -10,16 +10,16 @@ def load_library(file_path)
   puts emoticons
 end
 
-# def get_japanese_emoticon(file_path, emoticon)
-#   # code goes here
-#   emoticons = load_library(file_path)
-#   emoticons.each{|key, value|
-#     if emoticons[key][:english] == emoticon
-#       return emoticons[key][:japanese]
-#     end
-#   }
-#   return "Sorry, that emoticon was not found"
-# end
+def get_japanese_emoticon(file_path, emoticon)
+  # code goes here
+  emoticons = load_library(file_path)
+  emoticons.each{|key, value|
+    if emoticons[key][:english] == emoticon
+      return emoticons[key][:japanese]
+    end
+  }
+  return "Sorry, that emoticon was not found"
+end
 
 def get_japanese_emoticon(file_path, emoticon)
   # code goes here
