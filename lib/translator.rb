@@ -25,7 +25,7 @@ def get_japanese_emoticon(file_path, emoticon)
   # code goes here
   emoticons = load_library(file_path)
   emoticons.each{|key, value|
-    emoticons[key][:english] == emoticon
+    emoticons[key][:english]  emoticon
       return emoticons[key][:japanese]
     end
   }
