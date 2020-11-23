@@ -29,17 +29,14 @@ def get_english_meaning(file_path, emoticon)
   emoticons = load_library(file_path)
   emoticons.each do |key, value|
     if emoticons[key][:japanese] == emoticon
-<<<<<<< HEAD
       return key
     end
   end
   return "Sorry, that emoticon was not found"
 end
-=======
       true
     end
   end
 end
 
-get_english_meaning('lib/emoticons.yml', "☜(⌒▽⌒)☞")
->>>>>>> 1250aa67810f2643028945e59c7cbf3d562a6f38
+# get_english_meaning('lib/emoticons.yml', "☜(⌒▽⌒)☞")
